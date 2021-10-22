@@ -78,7 +78,6 @@
             background-repeat: no-repeat;
             text-decoration: none;
         }
-
         .market-btn .market-button-title {
             display: block;
             color: #222;
@@ -145,49 +144,52 @@
         <section class="d-table w-100">
 
             <div class="container">
-                <div class="d-flex justify-content-center align-items-center">
-                    <a href="index.html" class="logo">
-                        <img src="images/applogo.png" alt="" height="200" />
+                <div class="d-flex justify-content-center align-items-center w-100">
+                    <a href="index.html" class="logo"  style="opacity: 0;">
+                        <img src="images/applogo.png" alt="" height="200"/>
                     </a>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-12 text-center">
                         <div class="title-heading">
-                            <h3 class=" text-white mb-4">Cringe Memes - كرنجي ميمز</h3>
-                            <p class="para-desc mx-auto text-white-50">أفضل مقاطع وصور الميمز المضحكة والمسلية.
+                            <h3 class="text-white mb-4 slideDown" style="display: none;">Cringe Memes - كرنجي ميمز</h3>
+                            <p class="para-desc mx-auto text-white-50 slideDown" style="display: none;">أفضل مقاطع وصور الميمز المضحكة والمسلية.
                                 كن أول من يحصل على مقاطع الفيديو وصور واصوات الميمز الحصرية!
                                 بالإضافة الى سهولة التحميل ومشاركة المقاطع لمنصات التواصل الاجتماعي بكل سهولة.</p>
-                            <div class="d-flex align-items-center justify-content-center ">
-                                <div v-if="device == 'iOS' || device == 'unknown'"
-                                    class="d-flex flex-column align-items-center">
-                                    <a href="#" target="_blank" class="market-btn apple-btn mx-2" role="button">
-                                        <span class="market-button-subtitle">Download on the</span>
-                                        <span class="market-button-title">App Store</span>
-                                    </a>
-                                    <a v-if="device != 'unknown'" href="#" target="_blank" rel="noopener noreferrer"
-                                        class="text-light text-decoration-underline mt-2">
-                                        Download from
-                                        <i class="fab fa-google-play"></i>
-                                        Google Play
-                                    </a>
+                                <div class="slideDown" style="display: none;">
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <div v-if="device == 'iOS' || device == 'unknown'"
+                                            class="d-flex flex-column align-items-center">
+                                            <a href="#" target="_blank" class="market-btn apple-btn mx-2" role="button">
+                                                <span class="market-button-subtitle">Download on the</span>
+                                                <span class="market-button-title">App Store</span>
+                                            </a>
+                                            <a v-if="device != 'unknown'" href="#" target="_blank" rel="noopener noreferrer"
+                                                class="text-light text-decoration-underline mt-2">
+                                                Download from
+                                                <i class="fab fa-google-play"></i>
+                                                Google Play
+                                            </a>
+                                        </div>
+                                        <div v-if="device == 'Android' || device == 'unknown'"
+                                            class="d-flex flex-column align-items-center">
+                                            <a href="https://play.google.com/store/apps/details?id=com.flamingo.cringe"
+                                                target="_blank" class="market-btn google-btn" role="button">
+                                                <span class="market-button-subtitle">Download on the</span>
+                                                <span class="market-button-title">Google Play</span>
+                                            </a>
+                                            <a v-if="device != 'unknown'"
+                                                href="#"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="text-light text-decoration-underline mt-2">
+                                                Download from 
+                                                <i class="fab fa-app-store-ios"></i>
+                                                App store
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div v-if="device == 'Android' || device == 'unknown'"
-                                    class="d-flex flex-column align-items-center">
-                                    <a href="https://play.google.com/store/apps/details?id=com.flamingo.cringe"
-                                        target="_blank" class="market-btn google-btn" role="button">
-                                        <span class="market-button-subtitle">Download on the</span>
-                                        <span class="market-button-title">Google Play</span>
-                                    </a>
-                                    <a v-if="device != 'unknown'"
-                                        href="#"
-                                        target="_blank" rel="noopener noreferrer"
-                                        class="text-light text-decoration-underline mt-2">
-                                        Download from 
-                                        <i class="fab fa-app-store-ios"></i>
-                                        App store
-                                    </a>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                     <!--end row-->

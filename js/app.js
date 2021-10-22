@@ -16,4 +16,14 @@ var app = new Vue({
     data: {
       device: window.getMobileOperatingSystem()
     }
-  })
+})
+$(document).ready(function(){
+    $('.logo').animate({
+        opacity: 1
+    }, 750,function(){
+        $('.slideDown').slideDown(750,function(){
+            $('.slideDown2').slideDown(750);    
+        });
+    });
+
+});
