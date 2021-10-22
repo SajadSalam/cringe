@@ -147,7 +147,7 @@
             <div class="container">
                 <div class="d-flex justify-content-center align-items-center">
                     <a href="index.html" class="logo">
-                        <img src="images/applogo.png" alt="" height="250" />
+                        <img src="images/applogo.png" alt="" height="200" />
                     </a>
                 </div>
                 <div class="row justify-content-center">
@@ -164,9 +164,10 @@
                                         <span class="market-button-subtitle">Download on the</span>
                                         <span class="market-button-title">App Store</span>
                                     </a>
-                                    <a v-if="device != 'unknown'" href="#" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-underline mt-3">
+                                    <a v-if="device != 'unknown'" href="#" target="_blank" rel="noopener noreferrer"
+                                        class="text-light text-decoration-underline mt-2">
                                         Download from
-                                        <i></i>
+                                        <i class="fab fa-google-play"></i>
                                         Google Play
                                     </a>
                                 </div>
@@ -177,8 +178,13 @@
                                         <span class="market-button-subtitle">Download on the</span>
                                         <span class="market-button-title">Google Play</span>
                                     </a>
-                                    <a v-if="device != 'unknown'" href="https://play.google.com/store/apps/details?id=com.flamingo.cringe" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-underline mt-3">
-                                        Download from app sore
+                                    <a v-if="device != 'unknown'"
+                                        href="#"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="text-light text-decoration-underline mt-2">
+                                        Download from 
+                                        <i class="fab fa-app-store-ios"></i>
+                                        App store
                                     </a>
                                 </div>
                             </div>
