@@ -102,7 +102,7 @@ function bouncyBall(spawnX, spawnY) {
 
     this.speedX = Math.random() * generateDecimalBetween(-1.0, 1.0);
     this.speedY = Math.random() * generateDecimalBetween(-1.0, 1.0);
-    this.size = generateDecimalBetween(0.3, 1.3);
+    this.size = generateDecimalBetween(2, 2);
     ballCanvas.bouncyBallList.push(this);
 }
 
